@@ -1,0 +1,22 @@
+We are starting a new vehicle rental service, called SumoCar. In this service, we will rent different kinds of vehicles such as cars, bikes, and trucks. You can book a vehicle for different slots in a day. Each day has 4 slots viz. MORNING, AFTERNOON, EVENING, NIGHT. 
+
+We have limited inventory for each type of vehicle. Also, every vehicle has some rent price associated with it depending on the day slot when it is rented.
+
+User comes to our platform, and asks for a vehicle having different parameters for the query. User queries can look like:
+Available vehicles for the given slot
+Filter the results based on the vehicle type
+Sort the results based on price
+Any combination of the above queries
+
+Post querying, user can request the following:
+Book vehicles for a time slot
+
+Expectations :
+You are expected to write a function, which takes in the above query parameters, and returns the list of vehicles with the required metadata (vehicle price, type)
+User can book a vehicle for a time slot, and that particular vehicle won't be available for booking for that given time frame
+You are NOT expected to write any REST api for the same
+You are NOT expected to read inventory inputs from the command line. Read the initial inventory inputs from a resource file
+
+
+Bonus :
+Handle Cancellation of bookings
