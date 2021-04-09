@@ -37,6 +37,10 @@ public:
     }
     virtual VehicleType getVehicleType() = 0;
 
+    static bool comparator<(){
+
+    }
+
 };
 
 

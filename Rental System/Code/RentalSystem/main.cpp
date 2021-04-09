@@ -14,7 +14,7 @@ void displayAllBookings(){
 }
 
 void displayALLVechicles(){
-    auto vv = MyRentalSystem->getFreeVehiclesForSlot(SLOTS::AFTERNOON);
+    auto vv = MyRentalSystem->getFreeVehiclesForSlot(SLOTS::MORNING);
     std::cout << "Vehicles\n";
     for(auto i : vv) {
         std::cout << i << " \n";
@@ -31,6 +31,8 @@ int main() {
     displayAllBookings();
     MyRentalSystem->bookVehicle(1 , SLOTS::AFTERNOON);
     displayAllBookings();
+    displayALLVechicles();
+
 
 
     return 0;

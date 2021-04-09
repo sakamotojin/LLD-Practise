@@ -1,7 +1,7 @@
 //
 // Created by Sakamoto Jin on 4/8/2021.
 //
-
+#include <algorithm>
 #include "RentalSystem.h"
 
 RentalSystem* RentalSystem::rentalSystem = NULL;
@@ -32,6 +32,7 @@ std::vector<int> RentalSystem::getFreeVehiclesForSlot(SLOTS slot, bool SortedByF
     for(auto &i : vehicles){
         if(!bookingManager->checkBookingExists(i , slot)) freeVehicles.push_back(i);
     }
+    if(SortedByFare) std::sort(freeVehicles.begin(), freeVehicles.end());
     return freeVehicles;
 }
 
@@ -42,6 +43,7 @@ std::vector<int> RentalSystem::getFreeVehiclesForTypeAndSLot(VehicleType Type, S
     for(auto &i : vehicles){
         if(!bookingManager->checkBookingExists(i , slot)) freeVehicles.push_back(i);
     }
+    if(SortedByFare) std::sort(freeVehicles.begin(), freeVehicles.end(), Vehicle::);
     return freeVehicles;
 }
 
