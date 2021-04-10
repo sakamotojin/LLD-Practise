@@ -30,9 +30,9 @@ std::vector<int> RentalSystem::getFreeVehiclesForSlot(SLOTS slot, bool SortedByF
     auto vehicles = vehicleManager->getVehicleList();
     std::vector<int> freeVehicles ;
     for(auto &i : vehicles){
-        if(!bookingManager->checkBookingExists(i , slot)) freeVehicles.push_back(i);
+        if(!bookingManager->checkBookingExists(i.second , slot)) freeVehicles.push_back(i.second);
     }
-    if(SortedByFare) std::sort(freeVehicles.begin(), freeVehicles.end());
+
     return freeVehicles;
 }
 
@@ -41,9 +41,9 @@ std::vector<int> RentalSystem::getFreeVehiclesForTypeAndSLot(VehicleType Type, S
     auto vehicles = vehicleManager->getVehiclesByType(Type);
     std::vector<int> freeVehicles ;
     for(auto &i : vehicles){
-        if(!bookingManager->checkBookingExists(i , slot)) freeVehicles.push_back(i);
+        if(!bookingManager->checkBookingExists(i.second , slot)) freeVehicles.push_back(i.second);
     }
-    if(SortedByFare) std::sort(freeVehicles.begin(), freeVehicles.end(), Vehicle::);
+
     return freeVehicles;
 }
 

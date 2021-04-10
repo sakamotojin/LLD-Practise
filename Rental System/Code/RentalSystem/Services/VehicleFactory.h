@@ -5,11 +5,11 @@
 #ifndef RENTALSYSTEM_VEHICLEFACTORY_H
 #define RENTALSYSTEM_VEHICLEFACTORY_H
 
-#include "VehcileInfo.h"
-#include "Vehicle.h"
-#include "Bike.h"
-#include "Car.h"
-#include "Truck.h"
+#include "../Utils/VehcileInfo.h"
+#include "../Models/Vehicle.h"
+#include "../Models/Bike.h"
+#include "../Models/Car.h"
+#include "../Models/Truck.h"
 
 
 class VehicleFactory {

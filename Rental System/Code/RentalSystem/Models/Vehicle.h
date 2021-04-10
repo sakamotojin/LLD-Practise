@@ -2,8 +2,8 @@
 // Created by Sakamoto Jin on 4/8/2021.
 //
 #include <iostream>
-#include "Utils.h"
-#include "VehcileInfo.h"
+#include "../Utils/Utils.h"
+#include "../Utils/VehcileInfo.h"
 #ifndef RENTALSYSTEM_VEHICLE_H
 #define RENTALSYSTEM_VEHICLE_H
 
@@ -36,10 +36,6 @@ public:
         << convertVehicleTyeToString(getVehicleType());
     }
     virtual VehicleType getVehicleType() = 0;
-
-    static bool comparator<(){
-
-    }
 
 };
 

@@ -1,9 +1,9 @@
 //
 // Created by Sakamoto Jin on 4/8/2021.
 //
-#include "VehcileInfo.h"
+#include "../Utils/VehcileInfo.h"
 #include <iostream>
-#include "Utils.h"
+#include "../Utils/Utils.h"
 #ifndef RENTALSYSTEM_BOOKING_H
 #define RENTALSYSTEM_BOOKING_H
 

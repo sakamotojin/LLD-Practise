@@ -1,5 +1,5 @@
 #include <iostream>
-#include "RentalSystem.h"
+#include "Controller/RentalSystem.h"
 
 RentalSystem* MyRentalSystem;
 

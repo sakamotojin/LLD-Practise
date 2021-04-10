@@ -4,9 +4,9 @@
 #include <vector>
 #include <map>
 #include <set>
-#include "VehcileInfo.h"
-#include "Vehicle.h"
-#include "Booking.h"
+#include "../Utils/VehcileInfo.h"
+#include "../Models/Vehicle.h"
+#include "../Models/Booking.h"
 
 #ifndef RENTALSYSTEM_BOOKINGMANAGER_H
 #define RENTALSYSTEM_BOOKINGMANAGER_H

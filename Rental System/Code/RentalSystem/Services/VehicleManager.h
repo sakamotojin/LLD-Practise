@@ -1,7 +1,7 @@
 //
 // Created by Sakamoto Jin on 4/8/2021.
 //
-#include "Vehicle.h"
+#include "../Models/Vehicle.h"
 #include "VehicleFactory.h"
 #include <vector>
 #include <map>
@@ -42,14 +42,19 @@ public:
         return VehicleById[id];
     }
 
-    std::set<int> getVehicleList(){
-        return  this->VehicleIdList;
+    std::set<std::pair<double,int>> getVehicleList(){
+        std::set<std::pair<double, int>> vehicleIdListSortedByFare;
+
+        for(auto &i : this->VehicleList) {
+            vehicleIdListSortedByFare.insert({i->getFare() , i->getId()});
+        }
+        return  vehicleIdListSortedByFare;
     }
 
-    std::set<int> getVehiclesByType(VehicleType Type){
-        std::set<int> vehicleType;
+    std::set<std::pair<double,int>> getVehiclesByType(VehicleType Type){
+        std::set<std::pair<double, int>> vehicleType;
         for(auto &i : VehicleList){
-            if(i->getVehicleType() == Type) vehicleType.insert(i->getId());
+            if(i->getVehicleType() == Type) vehicleType.insert({i->getFare(),i->getId()});
         }
         return vehicleType;
     }
