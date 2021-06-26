@@ -4,4 +4,4 @@ Machine Coding Practise
 
 Drive Link For Resources
 
-https://drive.google.com/drive/folders/1ub3ZCZzNSHVJnhflSSd9f8Al7uPHa-cG?usp=sharing
+https://drive.google.com/drive/folders/1PB7Cw85QxtBvSvbPMXow2xuPLOGaJAU7?usp=sharing
